@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/UiPathWorkFlowAnalyzerRule/CheckConsecutiveStudioRuns/bin/Debug/CheckConsecutiveStudioRuns.dll
+/UiPathWorkFlowAnalyzerRule/CheckConsecutiveStudioRuns/bin/Debug/CheckConsecutiveStudioRuns.dll.config
+/UiPathWorkFlowAnalyzerRule/CheckConsecutiveStudioRuns/bin/Debug/CheckConsecutiveStudioRuns.pdb
+/UiPathWorkFlowAnalyzerRule/CheckConsecutiveStudioRuns/bin/Debug/CheckConsecutiveStudioXRuns.dll
+/UiPathWorkFlowAnalyzerRule/CheckConsecutiveStudioRuns/bin/Debug/CheckConsecutiveStudioXRuns.dll.config
+/UiPathWorkFlowAnalyzerRule/CheckConsecutiveStudioRuns/bin/Debug/CheckConsecutiveStudioXRuns.pdb
+/UiPathWorkFlowAnalyzerRule/CheckConsecutiveStudioRuns/bin/Debug/Microsoft.Bcl.AsyncInterfaces.dll
+/UiPathWorkFlowAnalyzerRule/CheckConsecutiveStudioRuns/bin/Debug/Microsoft.Bcl.AsyncInterfaces.xml
+/UiPathWorkFlowAnalyzerRule/CheckConsecutiveStudioRuns/bin/Debug
+/UiPathWorkFlowAnalyzerRule/CheckConsecutiveStudioRuns/obj/Debug
+/UiPathWorkFlowAnalyzerRule/CheckConsecutiveStudioRuns/obj/Release/TempPE
+/UiPathWorkFlowAnalyzerRule/CheckConsecutiveStudioRuns/obj/Release
