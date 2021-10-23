@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckConsecutiveStudioRuns", "CheckConsecutiveStudioRuns\CheckConsecutiveStudioRuns.csproj", "{E7062324-1178-4641-B2D9-E7999BB713D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LatestBuilds", "LatestBuilds", "{487F2D5E-E482-4E48-8420-BC94EBCA8389}"
+	ProjectSection(SolutionItems) = preProject
+		CheckConsecutiveStudioRuns\CheckStudioRuns.0.0.31.nupkg = CheckConsecutiveStudioRuns\CheckStudioRuns.0.0.31.nupkg
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7062324-1178-4641-B2D9-E7999BB713D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7062324-1178-4641-B2D9-E7999BB713D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7062324-1178-4641-B2D9-E7999BB713D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7062324-1178-4641-B2D9-E7999BB713D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5C5E33C-B8CF-442D-9452-59AFF0FCD80A}
+	EndGlobalSection
+EndGlobal

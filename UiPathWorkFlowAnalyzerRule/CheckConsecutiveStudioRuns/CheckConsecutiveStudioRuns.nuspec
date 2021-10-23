@@ -1,0 +1,21 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>CheckStudioRuns</id>
+    <version>0.0.32</version>
+    <title>CheckStudioRuns</title>
+    <authors>Ankit Rajput and Fernando Casanova</authors>
+    <owners>Ankit Rajput and Fernando Casanova</owners>
+    <licenseUrl>https://www.uipath.com/hubfs/legalspot/</licenseUrl>
+    <projectUrl>https://www.uipath.com</projectUrl>
+    <iconUrl>http://www.uipath.com/hubfs/Logos/</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Activity</description>
+    <releaseNotes>0.0.7: Final Test for Studio</releaseNotes>
+    <copyright>Copyright 2020</copyright>
+    <tags></tags>
+  </metadata>
+  <files>
+    <file src="bin\Release\*.dll" target="lib\net461\" />
+  </files>
+</package>
