@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Reflection;
+using System.Windows.Forms;
 using UiPath.Studio.Activities.Api;
 using UiPath.Studio.Activities.Api.Analyzer;
 using UiPath.Studio.Activities.Api.Analyzer.Rules;
@@ -143,23 +144,26 @@ namespace CheckConsecutiveStudioRuns
             {                
                 if (projectPersistanceInfo.Count>maxNumberOfRuns)
                 {
-                    using (Form1 form = new Form1(warningMessage) { TopMost = true })
+                    DialogResult result;
+                    using (Form1 form = new Form1(warningMessage,urlHelper) { TopMost = true })
                     {
                         var hwnd = ProcessHelper.GetParentWindow();
-                        var result = form.ShowDialog(hwnd);
+                        result = form.ShowDialog(hwnd);
                     }
 
-                    var messageList = new List<string>();
-                    messageList.Add(warningMessage);
-
-                    return new InspectionResult()
-                    {                       
-                        HasErrors = true,
-                        ErrorLevel = configuredRule.ErrorLevel,
-                        DocumentationLink = urlHelper,
-                        RecommendationMessage = warningMessage,
-                        Messages = messageList
-                    }; 
+                    var messageList = new List<string>();                                        
+                    InspectionResult inspectionResult = new InspectionResult();
+                    inspectionResult.HasErrors = false;
+                    if(result== DialogResult.Cancel)
+                    {
+                        inspectionResult.HasErrors = true;
+                        inspectionResult.ErrorLevel = configuredRule.ErrorLevel;
+                        inspectionResult.DocumentationLink = urlHelper;
+                        inspectionResult.RecommendationMessage = warningMessage;
+                        inspectionResult.Messages = messageList;
+                    }
+                    
+                    return inspectionResult;
                 }
             }
             projectCurrentInfo.Count = projectPersistanceInfo.Count + 1;
