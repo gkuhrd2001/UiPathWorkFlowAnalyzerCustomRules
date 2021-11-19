@@ -51,6 +51,13 @@ namespace CheckConsecutiveStudioRuns
                 LocalizedDisplayName = Resource.UrlParameterName
             });
 
+            newRule.Parameters.Add(Resource.LoggingProcess, new Parameter()
+            {
+                DefaultValue = "",
+                Key = Resource.LoggingProcess,
+                LocalizedDisplayName = Resource.LoggingProcess
+            });
+
             workflowAnalyzerConfigService.AddRule(newRule);
         }
 
@@ -162,7 +169,17 @@ namespace CheckConsecutiveStudioRuns
                         inspectionResult.RecommendationMessage = warningMessage;
                         inspectionResult.Messages = messageList;
                     }
-                    
+                    else
+                    {
+                        try
+                        {
+                            RobotFactory robotFactory = new RobotFactory();
+                            robotFactory.RunAutomation(configuredRule.Parameters[Resource.LoggingProcess]?.Value, projectToInspect.DisplayName, projectPersistanceInfo.Hash);
+                        }
+                        catch(Exception exp)
+                        {                 
+                        }                        
+                    }                    
                     return inspectionResult;
                 }
             }

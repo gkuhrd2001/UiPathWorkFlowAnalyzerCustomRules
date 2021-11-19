@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>CheckStudioRuns</id>
-    <version>0.0.45</version>
+    <version>0.1.4</version>
     <title>CheckStudioRuns</title>
     <authors>Ankit Rajput and Fernando Casanova</authors>
     <owners>Ankit Rajput and Fernando Casanova</owners>

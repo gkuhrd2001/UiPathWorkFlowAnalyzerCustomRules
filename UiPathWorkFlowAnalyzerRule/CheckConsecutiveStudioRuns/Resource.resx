@@ -120,6 +120,9 @@
   <data name="BusinessRule" xml:space="preserve">
     <value>BusinessRule</value>
   </data>
+  <data name="LoggingProcess" xml:space="preserve">
+    <value>RuleVoilation</value>
+  </data>
   <data name="ProcessNameToExecute" xml:space="preserve">
     <value>TestProcess</value>
   </data>
@@ -142,7 +145,7 @@
     <value>Require project publish</value>
   </data>
   <data name="RuleId" xml:space="preserve">
-    <value>ST-PUB-002</value>
+    <value>ST-PUB-001</value>
   </data>
   <data name="RuleRecommendation" xml:space="preserve">
     <value>Publish to Orchestrator instead of running from Studio or StudioX.</value>

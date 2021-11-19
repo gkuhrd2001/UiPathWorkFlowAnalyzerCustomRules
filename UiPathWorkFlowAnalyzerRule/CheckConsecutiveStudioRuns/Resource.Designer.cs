@@ -70,6 +70,15 @@ namespace CheckConsecutiveStudioRuns {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to RuleVoilation.
+        /// </summary>
+        internal static string LoggingProcess {
+            get {
+                return ResourceManager.GetString("LoggingProcess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to TestProcess.
         /// </summary>
         internal static string ProcessNameToExecute {
@@ -133,7 +142,7 @@ namespace CheckConsecutiveStudioRuns {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ST-PUB-002.
+        ///   Looks up a localized string similar to ST-PUB-001.
         /// </summary>
         internal static string RuleId {
             get {
