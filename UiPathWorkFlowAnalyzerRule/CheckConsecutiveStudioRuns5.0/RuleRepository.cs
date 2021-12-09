@@ -9,7 +9,7 @@ using UiPath.Studio.Activities.Api.Analyzer;
 using UiPath.Studio.Activities.Api.Analyzer.Rules;
 using UiPath.Studio.Analyzer.Models;
 
-namespace CheckConsecutiveStudioRuns
+namespace CheckConsecutiveStudioRuns5
 {
 
     public class RuleRepository : IRegisterAnalyzerConfiguration
@@ -21,6 +21,7 @@ namespace CheckConsecutiveStudioRuns
             {
                 return;
             }
+
 
             var newRule = new Rule<IProjectModel>(Resource.RequirePublishRuleName, Resource.RuleId, InspectNumberOfConsecutiveRuns)
             {
@@ -34,7 +35,7 @@ namespace CheckConsecutiveStudioRuns
             {
                 DefaultValue = Resource.RequirePublishAfterParameterDefault,
                 Key = Resource.RequirePublishAfterParameterKey,
-                LocalizedDisplayName = Resource.RequirePublishAfterParameterName
+                LocalizedDisplayName = Resource.RequirePublishAfterParameterName                
             });
 
             newRule.Parameters.Add(Resource.WarningMessageParameterKey, new Parameter()

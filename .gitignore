@@ -57,3 +57,9 @@
 /UiPathWorkFlowAnalyzerRule/CheckConsecutiveStudioRuns/obj/x64/Debug
 *.nupkg
 /UiPathWorkFlowAnalyzerRule/.vs/UiPathWorkFlowAnalyzerRule/DesignTimeBuild
+/UiPathWorkFlowAnalyzerRule/CheckConsecutiveStudioRuns5.0/bin/Release/net5.0-windows
+/UiPathWorkFlowAnalyzerRule/CheckConsecutiveStudioRuns5.0/bin/Debug/net5.0-windows
+/UiPathWorkFlowAnalyzerRule/CheckConsecutiveStudioRuns5.0/obj/Debug/net5.0
+/UiPathWorkFlowAnalyzerRule/CheckConsecutiveStudioRuns5.0/obj/Debug/net5.0-windows/ref
+/UiPathWorkFlowAnalyzerRule/CheckConsecutiveStudioRuns5.0/obj/Release/net5.0-windows
+/UiPathWorkFlowAnalyzerRule/CheckConsecutiveStudioRuns5.0/obj

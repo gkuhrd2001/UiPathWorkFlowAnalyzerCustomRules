@@ -143,6 +143,9 @@
     <Compile Include="WindowWrapper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
     <None Include="app.config" />
     <None Include="CheckConsecutiveStudioRuns.nuspec" />
     <None Include="packages.config" />

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CheckConsecutiveStudioRuns {
+namespace CheckConsecutiveStudioRuns5 {
     using System;
     
     
